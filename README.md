@@ -34,6 +34,11 @@ IsValid("AbTp9!fok") // true
 
 ## Como executar aplicação
 
+### Via IDE
+
+- #### Clone no GIT
+  Para realizar a execução da aplicação é necessario realizar um clone do Github e importar o projeto na IDE de preferencia.
+
 ### Via Docker
 
 - #### Baixando a imagem
@@ -69,12 +74,19 @@ curl --request POST \
 ```
 ![img.png](img.png)
 
+#### Swagger
+
+Após iniciar a aplicação o swagger estará disponível no endpoint `http://localhost:8080/v1/swagger-ui/index.html`.
+
+![img_4.png](img_4.png)
 
 ## Funcionamento
 
 Todas as regras são definidas em um enum chamado `citerios` e cada critério retorna sua implementação da interface ``PwdRegrasInterfaces``, sendo possível validar a senha para varios criterios dando a possibilidade de implementar mais regas.
 
 ![img_1.png](img_1.png)
+
+Foi realizado a criação dos testes integrados e testes dos serviços com alguns cenarios possiveis;
 
 
 
